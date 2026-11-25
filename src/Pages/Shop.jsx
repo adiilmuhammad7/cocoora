@@ -267,11 +267,11 @@ const Shop = function () {
 
         <div className='bg-[#FFF8EC] min-h-screen'>
 
-            <h1 className='text-center py-20 text-4xl font-bold text-[#245C43]'>
+            <h1 className='text-center px-4 pt-12 pb-6 sm:py-16 lg:py-20 text-3xl sm:text-4xl font-bold text-[#245C43]'>
                 Discover Your Tropical Favorites
             </h1>
 
-            <p className='text-lg text-[#245C43] text-center'>
+            <p className='text-base sm:text-lg text-[#245C43] text-center px-5'>
                 Explore our refreshing collection of coconut drinks,
                 crafted for every moment.
             </p>
@@ -302,7 +302,7 @@ const Shop = function () {
                         setSearch(e.target.value)
                         setCurrentPage(1)
                     }}
-                    className='border border-[#245C43] rounded-full px-6 py-3 w-[350px]'
+                    className='border border-[#245C43] rounded-full px-5 sm:px-6 py-3 w-full max-w-[350px]'
                 />
 
                 {/* Category buttons */}
@@ -340,7 +340,7 @@ const Shop = function () {
             </div>
 
             {/* Product Cards */}
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-10 pb-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 px-4 sm:px-6 lg:px-10 pb-10'>
 
                 {currentProducts.length === 0 ? (
 

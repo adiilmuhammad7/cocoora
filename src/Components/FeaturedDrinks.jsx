@@ -7,7 +7,7 @@ const FeaturedDrinks = function () {
   
   return (
     <>
-      <section className="h-[750px] w-full relative isolate flex flex-col justify-between px-10 py-10 overflow-hidden">
+      <section className="min-h-[520px] sm:min-h-[620px] lg:h-[750px] w-full relative isolate flex flex-col justify-between px-5 sm:px-8 lg:px-10 py-8 sm:py-10 overflow-hidden">
 
         {/* Background Image */}
         <div
@@ -25,7 +25,7 @@ const FeaturedDrinks = function () {
             COCOORA FUSION COLLECTION
           </h3>
 
-          <h1 className="text-[#245C43] text-4xl md:text-6xl font-bold mt-5">
+          <h1 className="text-[#245C43] text-3xl sm:text-4xl md:text-6xl font-bold mt-5">
             FRESH <span className="text-[#8FB56A]">•</span>
             FRUITY <span className="text-[#8FB56A]">•</span>
             REFRESHING

@@ -202,7 +202,7 @@ const Register = function () {
 
         <div className="min-h-screen bg-[#FFF8EC] flex items-center justify-center px-4 py-10">
 
-            <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8 md:p-10">
+            <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-5 sm:p-8 md:p-10">
 
                 {/* Brand */}
                 <div className="text-center mb-8">

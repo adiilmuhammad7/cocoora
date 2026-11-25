@@ -124,7 +124,7 @@ const Wishlist = function () {
     }
 
     return (
-        <div className="min-h-screen bg-[#FFF8EC] px-10 py-16">
+        <div className="min-h-screen bg-[#FFF8EC] px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
 
             <h1 className="text-4xl font-bold text-[#245C43] text-center mb-12">
                 My Wishlist
@@ -147,7 +147,7 @@ const Wishlist = function () {
 
             ) : (
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
 
                     {wishlist.map(function (product) {
 
@@ -160,7 +160,7 @@ const Wishlist = function () {
                                 <img
                                     src={product.images[0]}
                                     alt={product.name}
-                                    className="w-full h-[300px] object-cover"
+                                    className="w-full h-[260px] sm:h-[300px] object-cover"
                                 />
 
                                 <div className="p-5">

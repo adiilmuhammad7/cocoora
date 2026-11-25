@@ -153,7 +153,7 @@ const ProductDetails = function () {
     }
 
     return (
-        <section className='bg-[#FFF8EC] min-h-screen px-6 md:px-16 py-16'>
+        <section className='bg-[#FFF8EC] min-h-screen px-4 sm:px-6 md:px-16 py-10 sm:py-16'>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
 
@@ -163,7 +163,7 @@ const ProductDetails = function () {
                     <img
                         src={selectedImage || product.images[0]}
                         alt={product.name}
-                        className='w-full h-[500px] md:h-[600px] object-cover'
+                        className='w-full h-[320px] sm:h-[500px] md:h-[600px] object-cover'
                     />
 
                     {/* Thumbnails */}

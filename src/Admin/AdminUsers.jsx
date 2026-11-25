@@ -105,7 +105,7 @@ const AdminUsers = function () {
 
     <SideBar />
 
-    <main className="ml-64 min-h-screen p-4 md:p-8">
+    <main className="min-h-screen w-full pb-20 p-4 md:p-8 lg:ml-64 lg:w-[calc(100%-16rem)] lg:pb-8">
 
                 {/* Header */}
                 <div className="mb-6">

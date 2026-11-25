@@ -249,7 +249,7 @@ const AdminProducts = function () {
     if (isError) return <p className="p-8">Something went wrong</p>
 
     return (
-        <div className="ml-64 min-h-screen w-[calc(100%-16rem)]">
+        <div className="min-h-screen w-full pb-16 lg:ml-64 lg:w-[calc(100%-16rem)] lg:pb-0">
 
             <SideBar />
 

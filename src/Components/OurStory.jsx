@@ -3,7 +3,7 @@ import React from 'react'
 
 const OurStory = function () {
   return (
-    <section className='bg-[#FFF8EC] py-24 px-10'>
+    <section className='bg-[#FFF8EC] py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-10'>
 
       <div className='max-w-4xl mx-auto text-center'>
 

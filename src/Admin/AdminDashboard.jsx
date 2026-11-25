@@ -79,11 +79,11 @@ const AdminDashboard = () => {
 
 
   return (
-    <div className="ml-64 min-h-screen w-[calc(100%-16rem)]">
+    <div className="min-h-screen w-full pb-16 lg:ml-64 lg:w-[calc(100%-16rem)] lg:pb-0">
       <SideBar />
-      <div className='flex-1 bg-[#FFF8EC] p-8 '>
+      <div className='flex-1 bg-[#FFF8EC] p-4 sm:p-6 lg:p-8 '>
         <h1 className='text-3xl font-bold text-green-900'>Dashboard Overview </h1>
-        <div className='grid grid-cols-4 gap-5 mt-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-6'>
           <div className='bg-white p-6 rounded-xl shadow-sm'>
             <h2 className='text-green-500 text-sm'>Total Products</h2>
             <p className='text-3xl font-bold text-green-900 mt-2'>{totalProducts}</p>

@@ -25,7 +25,7 @@ const Categories = function () {
     }
 
     return (
-        <section className='bg-[#FFF8EC] py-24 px-6 md:px-12'>
+        <section className='bg-[#FFF8EC] py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12'>
 
             {/* Section Heading */}
 
@@ -72,7 +72,7 @@ const Categories = function () {
                                 <img
                                     src={item.image}
                                     alt={item.name}
-                                    className='w-full h-[350px] object-cover transition duration-500 group-hover:scale-110'
+                                    className='w-full h-[280px] sm:h-[350px] object-cover transition duration-500 group-hover:scale-110'
                                 />
 
                                 {/* Dark Gradient */}

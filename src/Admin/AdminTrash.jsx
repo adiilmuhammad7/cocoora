@@ -53,7 +53,7 @@ const AdminTrash = () => {
     return (
         <>
             <SideBar />
-            <div className="ml-64 min-h-screen bg-[#FFF8EC] p-8">
+            <div className="min-h-screen bg-[#FFF8EC] p-4 pb-20 sm:p-6 lg:ml-64 lg:w-[calc(100%-16rem)] lg:p-8 lg:pb-8">
                 <h1 className="text-2xl font-bold text-[#245C43] mb-6">
                     Trash ({trashedProducts.length})
                 </h1>

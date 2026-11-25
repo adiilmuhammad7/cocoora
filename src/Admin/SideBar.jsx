@@ -50,10 +50,10 @@ const SideBar = () => {
   }
 
   return (
-    <aside className="fixed top-0 left-0 w-64 h-screen shrink-0 bg-white border-r border-gray-100 p-5 flex flex-col z-50">
+    <aside className="fixed bottom-0 left-0 z-50 flex h-16 w-full items-center bg-white border-t border-gray-100 px-2 lg:top-0 lg:bottom-auto lg:h-screen lg:w-64 lg:flex-col lg:border-r lg:border-t-0 lg:p-5">
 
       {/* Logo */}
-      <div className="flex items-center gap-2 px-2 mb-10">
+      <div className="hidden items-center gap-2 px-2 mb-10 lg:flex">
 
         <h1 className="text-xl font-bold text-[#245C43]">
           COCOORA
@@ -61,12 +61,12 @@ const SideBar = () => {
       </div>
 
       {/* Main Section */}
-      <div className="mb-3">
-        <p className="text-xs font-medium text-gray-400 px-3 mb-3">
+      <div className="w-full lg:mb-3">
+        <p className="hidden text-xs font-medium text-gray-400 px-3 mb-3 lg:block">
           MAIN
         </p>
 
-        <div className="flex flex-col gap-1">
+        <div className="grid grid-cols-5 gap-1 lg:flex lg:flex-col">
 
           {menuItems.map(function (item) {
             return (
@@ -75,7 +75,7 @@ const SideBar = () => {
                 onClick={function () {
                   navigate(item.path)
                 }}
-                className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition ${isActive(item.path)
+                className={`w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-0 lg:gap-3 px-1 lg:px-4 py-2 lg:py-3 rounded-lg text-[10px] lg:text-sm font-medium transition ${isActive(item.path)
                     ? 'bg-[#E5F8F0] text-[#16875A]'
                     : 'text-gray-600 hover:bg-gray-50'
                   }`}
@@ -94,7 +94,7 @@ const SideBar = () => {
       {/* Logout */}
       <button
         onClick={handleLogout}
-        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:bg-red-50 hover:text-red-600"
+        className="hidden w-full lg:flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:bg-red-50 hover:text-red-600"
       >
         <span className="text-lg w-5 text-center">⇥</span>
         Logout

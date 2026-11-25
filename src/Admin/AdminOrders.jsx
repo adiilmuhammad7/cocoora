@@ -106,10 +106,10 @@ const AdminOrders = () => {
   const currentOrder = filteredOrders.slice(startIndex, endIndex)
 
   return (
-    <div className="ml-64 min-h-screen w-[calc(100%-16rem)]">
+    <div className="min-h-screen w-full pb-16 lg:ml-64 lg:w-[calc(100%-16rem)] lg:pb-0">
       <SideBar />
 
-      <div className="flex-1 min-w-0 px-8 py-6">
+      <div className="flex-1 min-w-0 px-4 sm:px-6 lg:px-8 py-6">
 
         <h1 className="text-2xl font-semibold">Order Management</h1>
 

@@ -38,7 +38,7 @@ const Profile = function () {
     return (
         <div className="min-h-screen bg-[#FFF8EC] flex items-center justify-center px-5">
 
-            <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-8">
+            <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-5 sm:p-8">
 
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-[#245C43]">
