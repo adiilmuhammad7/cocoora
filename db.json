@@ -1,0 +1,1022 @@
+{
+  "admins": [
+    {
+      "id": "1",
+      "name": "COCOORA Admin",
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Young Coconut Water",
+      "category": "Pure Coconut",
+      "description": "Naturally refreshing coconut water straight from young tender coconuts.",
+      "price": 149,
+      "stock": 10,
+      "images": [
+        "/Images/image1youngwater.png",
+        "/Images/image2youngwater.png",
+        "/Images/image3youngwater.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "2",
+      "name": "Coconut Water with Pulp",
+      "category": "Pure Coconut",
+      "description": "Naturally refreshing young coconut water with soft tender coconut pulp pieces for a delightful tropical experience.",
+      "price": 189,
+      "stock": 48,
+      "images": [
+        "/Images/CoconutPulp1.png",
+        "/Images/CoconutPulp2.png",
+        "/Images/CoconutPulp3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "3",
+      "name": "Organic Coconut Water",
+      "category": "Pure Coconut",
+      "description": "Pure organic coconut water with a naturally refreshing taste, inspired by tropical nature and crafted for everyday refreshment.",
+      "price": 199,
+      "stock": 15,
+      "images": [
+        "/Images/OrganicCoconut1.png",
+        "/Images/OrganicCoconut2.png",
+        "/Images/OrganicCoconut3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "4",
+      "name": "Coco Electrolyte",
+      "category": "Pure Coconut",
+      "description": "A refreshing coconut water electrolyte drink crafted to replenish hydration and bring tropical freshness to your everyday routine.",
+      "price": 199,
+      "stock": 18,
+      "images": [
+        "/Images/CocoElectrolyte1.png",
+        "/Images/CocoElectrolyte2.png",
+        "/Images/CocoElectrolyte3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "5",
+      "name": "Sparkling Coco",
+      "category": "Tropical Fusion",
+      "description": "A crisp and refreshing sparkling coconut drink with delicate bubbles and a naturally tropical taste.",
+      "price": 189,
+      "stock": 18,
+      "images": [
+        "/Images/SparklingCoco1.png",
+        "/Images/SparklingCoco2.png",
+        "/Images/SparklingCoco3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "6",
+      "name": "Coco Bits",
+      "category": "Pure Coconut",
+      "description": "A refreshing coconut drink filled with soft tender coconut bits, bringing a delicious texture and authentic tropical coconut flavor.",
+      "price": 199,
+      "stock": 17,
+      "images": [
+        "/Images/CocoBits1.png",
+        "/Images/CocoBits2.png",
+        "/Images/CocoBits3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "7",
+      "name": "Mango Coconut Fusion",
+      "category": "Tropical Fusion",
+      "description": "A delicious tropical blend of sweet ripe mango and refreshing coconut water, creating a naturally fruity and refreshing island-inspired drink.",
+      "price": 189,
+      "stock": 19,
+      "images": [
+        "/Images/MangoCoconutFusion1.png",
+        "/Images/MangoCoconutFusion2.png",
+        "/Images/MangoCoconutFusion3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "8",
+      "name": "Pineapple Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of sweet juicy pineapple and natural coconut water, delivering a fruity, vibrant, and refreshing island-inspired taste.",
+      "price": 179,
+      "stock": 20,
+      "images": [
+        "/Images/PineappleCocoSplash1.png",
+        "/Images/PineappleCocoSplash2.png",
+        "/Images/PineappleCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "9",
+      "name": "Strawberry Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of sweet strawberries and natural coconut water, delivering a fruity, vibrant, and refreshing island-inspired taste.",
+      "price": 199,
+      "stock": 20,
+      "images": [
+        "/Images/StrawberryCocoSplash1.png",
+        "/Images/StrawberryCocoSplash2.png",
+        "/Images/StrawberryCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "10",
+      "name": "Blueberry Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of sweet blueberries and natural coconut water, delivering a fruity, vibrant, and refreshing island-inspired taste.",
+      "price": 209,
+      "stock": 20,
+      "images": [
+        "/Images/BlueberryCocoSplash1.png",
+        "/Images/BlueberryCocoSplash2.png",
+        "/Images/BlueberryCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "11",
+      "name": "Watermelon Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of juicy watermelon and natural coconut water, delivering a light, fruity, and revitalizing island-inspired taste.",
+      "price": 179,
+      "stock": 20,
+      "images": [
+        "/Images/WatermelonCocoSplash1.png",
+        "/Images/WatermelonCocoSplash2.png",
+        "/Images/WatermelonCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "12",
+      "name": "Butter Fruit Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of creamy butter fruit (avocado) and natural coconut water, delivering a smooth, mild, and naturally refreshing taste.",
+      "price": 199,
+      "stock": 20,
+      "images": [
+        "/Images/ButterFruitCocoSplash1.png",
+        "/Images/ButterFruitCocoSplash2.png",
+        "/Images/ButterFruitCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "13",
+      "name": "Dragon Fruit Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of vibrant dragon fruit and natural coconut water, delivering a light, fruity, and revitalizing taste with an exotic tropical character.",
+      "price": 209,
+      "stock": 20,
+      "images": [
+        "/Images/DragonFruitCocoSplash1.png",
+        "/Images/DragonFruitCocoSplash2.png",
+        "/Images/DragonFruitCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "14",
+      "name": "Grape Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of juicy purple grapes and natural coconut water, delivering a fruity, refreshing, and vibrant taste with a subtle tropical character.",
+      "price": 189,
+      "stock": 20,
+      "images": [
+        "/Images/GrapeCocoSplash1.png",
+        "/Images/GrapeCocoSplash2.png",
+        "/Images/GrapeCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "15",
+      "name": "Orange Coco Splash",
+      "category": "Tropical Fusion",
+      "description": "A refreshing tropical fusion of juicy oranges and natural coconut water, delivering a bright, citrusy, fruity, and revitalizing taste.",
+      "price": 179,
+      "stock": 20,
+      "images": [
+        "/Images/OrangeCocoSplash1.png",
+        "/Images/OrangeCocoSplash2.png",
+        "/Images/OrangeCocoSplash3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "16",
+      "name": "Coffee Coco Cream",
+      "category": "Coconut Cream",
+      "description": "An indulgent blend of rich coffee and smooth coconut cream, delivering a velvety texture with deep coffee notes and a luxurious tropical finish.",
+      "price": 229,
+      "stock": 19,
+      "images": [
+        "/Images/CoffeeCocoCream1.png",
+        "/Images/CoffeeCocoCream2.png",
+        "/Images/CoffeeCocoCream3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "17",
+      "name": "Vanilla Coco Velvet",
+      "category": "Coconut Cream",
+      "description": "A luxurious blend of smooth coconut cream and delicate vanilla, delivering a velvety texture with a sweet, aromatic, and indulgent tropical finish.",
+      "price": 219,
+      "stock": 20,
+      "images": [
+        "/Images/VanillaCocoVelvet1.png",
+        "/Images/VanillaCocoVelvet2.png",
+        "/Images/VanillaCocoVelvet3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "18",
+      "name": "Banana Coco Velvet",
+      "category": "Coconut Cream",
+      "description": "An indulgent blend of ripe bananas and smooth coconut cream, delivering a rich, velvety texture with a naturally sweet and tropical dessert-inspired flavor.",
+      "price": 219,
+      "stock": 20,
+      "images": [
+        "/Images/BananaCocoVelvet1.png",
+        "/Images/BananaCocoVelvet2.png",
+        "/Images/BananaCocoVelvet3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "19",
+      "name": "Pistachio Coco Luxe",
+      "category": "Coconut Cream",
+      "description": "A luxurious blend of roasted pistachios and smooth coconut cream, delivering a rich, velvety texture with a delicate nutty flavor and an indulgent tropical finish.",
+      "price": 249,
+      "stock": 20,
+      "images": [
+        "/Images/PistachioCocoLuxe1.png",
+        "/Images/PistachioCocoLuxe2.png",
+        "/Images/PistachioCocoLuxe3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "20",
+      "name": "Almond Coco Luxe",
+      "category": "Coconut Cream",
+      "description": "A luxurious blend of finely roasted almonds and smooth coconut cream, delivering a velvety texture with a delicate nutty richness and an indulgent tropical finish.",
+      "price": 249,
+      "stock": 18,
+      "images": [
+        "/Images/AlmondCocoLuxe1.png",
+        "/Images/AlmondCocoLuxe2.png",
+        "/Images/AlmondCocoLuxe3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "21",
+      "name": "Choco Coco Cream",
+      "category": "Coconut Cream",
+      "description": "An indulgent blend of rich cocoa and smooth coconut cream, delivering a velvety texture with deep chocolate notes and a luxurious tropical finish.",
+      "price": 229,
+      "stock": 20,
+      "images": [
+        "/Images/ChocoCocoCream1.png",
+        "/Images/ChocoCocoCream2.png",
+        "/Images/ChocoCocoCream3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "22",
+      "name": "Avocado Coco Smoothie",
+      "category": "Coconut Smoothie",
+      "description": "A rich and creamy blend of ripe avocado and smooth coconut, delivering a velvety texture with a naturally mild, nutty flavor and a refreshing tropical finish.",
+      "price": 259,
+      "stock": 20,
+      "images": [
+        "/Images/AvocadoCocoSmoothie1.png",
+        "/Images/AvocadoCocoSmoothie2.png",
+        "/Images/AvocadoCocoSmoothie3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "23",
+      "name": "Chocolate Coco Smoothie",
+      "category": "Coconut Smoothie",
+      "description": "An indulgent blend of rich chocolate and smooth coconut, delivering a thick, velvety texture with deep cocoa notes and a delicious tropical finish.",
+      "price": 269,
+      "stock": 19,
+      "images": [
+        "/Images/ChocolateCocoSmoothie1.png",
+        "/Images/ChocolateCocoSmoothie2.png",
+        "/Images/ChocolateCocoSmoothie3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "24",
+      "name": "Small Banana Smoothie",
+      "category": "Coconut Smoothie",
+      "description": "A delicious blend of sweet small ripe bananas and smooth coconut, delivering a naturally sweet, creamy, and velvety texture with a delightful tropical finish.",
+      "price": 239,
+      "stock": 20,
+      "images": [
+        "/Images/SmallBananaSmoothie1.png",
+        "/Images/SmallBananaSmoothie2.png",
+        "/Images/SmallBananaSmoothie3.png"
+      ],
+      "deleted": false
+    },
+    {
+      "id": "25",
+      "name": "Strawberry Coco Smoothie",
+      "category": "Coconut Smoothie",
+      "description": "A delicious blend of sweet strawberries and smooth coconut, delivering a creamy, velvety texture with a vibrant fruity flavor and a refreshing tropical finish.",
+      "price": 249,
+      "stock": 19,
+      "images": [
+        "/Images/StrawberryCocoSmoothie1.png",
+        "/Images/StrawberryCocoSmoothie2.png",
+        "/Images/StrawberryCocoSmoothie3.png"
+      ],
+      "deleted": false
+    }
+  ],
+  "users": [
+    {
+      "name": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "password": "Adil@123",
+      "blocked": false,
+      "isInactive": false,
+      "id": "8nZ_ZNmvxrk",
+      "addresses": [
+        {
+          "fullName": "Adil",
+          "phone": "7902219858",
+          "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+          "city": "Nilambur",
+          "state": "Kerala",
+          "pincode": "679333",
+          "isDefault": true,
+          "id": "1794491656772"
+        }
+      ],
+      "isBlocked": false
+    },
+    {
+      "name": "Anjith",
+      "email": "anjithp@gmail.com",
+      "password": "Anjith@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "NSUxQ_H3g5M",
+      "isBlocked": false
+    },
+    {
+      "name": "Ashish",
+      "email": "ashish@gmail.com",
+      "password": "Ashish@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "C2V0VG0SYQA",
+      "isBlocked": false
+    },
+    {
+      "name": "Vaishnav",
+      "email": "vaishnav@gmail.com",
+      "password": "Vaishnav@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "6EALDf2Qc7M",
+      "isBlocked": false
+    },
+    {
+      "name": "Diljith",
+      "email": "diljith@gmail.com",
+      "password": "Diljith@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "ggcwEzswRb0",
+      "isBlocked": false
+    },
+    {
+      "name": "Shamil",
+      "email": "shamil@gmail.com",
+      "password": "Shamil@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "o30_M2RwpLQ",
+      "isBlocked": false
+    },
+    {
+      "name": "Arun",
+      "email": "arun@gmail.com",
+      "password": "Arun@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "IpZ94n76YQA",
+      "isBlocked": false
+    },
+    {
+      "name": "Amil",
+      "email": "amil@gmail.com",
+      "password": "Amil@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "CZ-AhVPqUNA",
+      "isBlocked": false
+    },
+    {
+      "name": "Abinav",
+      "email": "abinav@gmail.com",
+      "password": "Abinav@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "mH9bh3inusc",
+      "isBlocked": false
+    },
+    {
+      "name": "Anil",
+      "email": "anil@gmail.com",
+      "password": "Anil@123",
+      "blocked": false,
+      "isInactive": false,
+      "addresses": [],
+      "id": "YhhCfIql5B0"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "1",
+          "name": "Young Coconut Water",
+          "category": "Pure Coconut",
+          "description": "Naturally refreshing coconut water straight from young tender coconuts.",
+          "price": 149,
+          "stock": 11,
+          "images": [
+            "/Images/image1youngwater.png",
+            "/Images/image2youngwater.png",
+            "/Images/image3youngwater.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 149,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "createdAt": "2026-11-12T13:54:20.920Z",
+      "id": "jNRmtJpuGgI"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "3",
+          "name": "Organic Coconut Water",
+          "category": "Pure Coconut",
+          "description": "Pure organic coconut water with a naturally refreshing taste, inspired by tropical nature and crafted for everyday refreshment.",
+          "price": 199,
+          "stock": 18,
+          "images": [
+            "/Images/OrganicCoconut1.png",
+            "/Images/OrganicCoconut2.png",
+            "/Images/OrganicCoconut3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 199,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "createdAt": "2026-11-12T13:54:33.268Z",
+      "id": "PU2qC7o6Bj0"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "5",
+          "name": "Sparkling Coco",
+          "category": "Tropical Fusion",
+          "description": "A crisp and refreshing sparkling coconut drink with delicate bubbles and a naturally tropical taste.",
+          "price": 189,
+          "stock": 20,
+          "images": [
+            "/Images/SparklingCoco1.png",
+            "/Images/SparklingCoco2.png",
+            "/Images/SparklingCoco3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 189,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "createdAt": "2026-11-12T13:54:38.668Z",
+      "id": "dnQjHhGEcqQ"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "25",
+          "name": "Strawberry Coco Smoothie",
+          "category": "Coconut Smoothie",
+          "description": "A delicious blend of sweet strawberries and smooth coconut, delivering a creamy, velvety texture with a vibrant fruity flavor and a refreshing tropical finish.",
+          "price": 249,
+          "stock": 20,
+          "images": [
+            "/Images/StrawberryCocoSmoothie1.png",
+            "/Images/StrawberryCocoSmoothie2.png",
+            "/Images/StrawberryCocoSmoothie3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 249,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Success",
+      "createdAt": "2026-11-12T13:54:49.818Z",
+      "id": "pfULr7eZEQw"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "5",
+          "name": "Sparkling Coco",
+          "category": "Tropical Fusion",
+          "description": "A crisp and refreshing sparkling coconut drink with delicate bubbles and a naturally tropical taste.",
+          "price": 189,
+          "stock": 19,
+          "images": [
+            "/Images/SparklingCoco1.png",
+            "/Images/SparklingCoco2.png",
+            "/Images/SparklingCoco3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 189,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-16T07:00:54.274Z",
+      "id": "mSVOVFJYGxw"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "6",
+          "name": "Coco Bits",
+          "category": "Pure Coconut",
+          "description": "A refreshing coconut drink filled with soft tender coconut bits, bringing a delicious texture and authentic tropical coconut flavor.",
+          "price": 199,
+          "stock": 20,
+          "images": [
+            "/Images/CocoBits1.png",
+            "/Images/CocoBits2.png",
+            "/Images/CocoBits3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 199,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-16T07:00:59.292Z",
+      "id": "nf3JjW-LM_g"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "4",
+          "name": "Coco Electrolyte",
+          "category": "Pure Coconut",
+          "description": "A refreshing coconut water electrolyte drink crafted to replenish hydration and bring tropical freshness to your everyday routine.",
+          "price": 199,
+          "stock": 19,
+          "images": [
+            "/Images/CocoElectrolyte1.png",
+            "/Images/CocoElectrolyte2.png",
+            "/Images/CocoElectrolyte3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 199,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Delivered",
+      "createdAt": "2026-11-16T07:01:04.324Z",
+      "id": "EjGvXnY7w98"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "16",
+          "name": "Coffee Coco Cream",
+          "category": "Coconut Cream",
+          "description": "An indulgent blend of rich coffee and smooth coconut cream, delivering a velvety texture with deep coffee notes and a luxurious tropical finish.",
+          "price": 229,
+          "stock": 20,
+          "images": [
+            "/Images/CoffeeCocoCream1.png",
+            "/Images/CoffeeCocoCream2.png",
+            "/Images/CoffeeCocoCream3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 229,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-16T07:01:12.275Z",
+      "id": "nYJJRvO09nI"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "23",
+          "name": "Chocolate Coco Smoothie",
+          "category": "Coconut Smoothie",
+          "description": "An indulgent blend of rich chocolate and smooth coconut, delivering a thick, velvety texture with deep cocoa notes and a delicious tropical finish.",
+          "price": 269,
+          "stock": 20,
+          "images": [
+            "/Images/ChocolateCocoSmoothie1.png",
+            "/Images/ChocolateCocoSmoothie2.png",
+            "/Images/ChocolateCocoSmoothie3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 269,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-16T07:01:24.374Z",
+      "id": "WR1EfGlmRf8"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "3",
+          "name": "Organic Coconut Water",
+          "price": 199,
+          "image": "/Images/OrganicCoconut1.png",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Coconut Water with Pulp",
+          "price": 189,
+          "image": "/Images/CoconutPulp1.png",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Coco Bits",
+          "price": 199,
+          "image": "/Images/CocoBits1.png",
+          "quantity": 2
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 786,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-17T06:45:21.435Z",
+      "id": "Hb1KArVfuyI"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "2",
+          "name": "Coconut Water with Pulp",
+          "category": "Pure Coconut",
+          "description": "Naturally refreshing young coconut water with soft tender coconut pulp pieces for a delightful tropical experience.",
+          "price": 189,
+          "stock": 1,
+          "images": [
+            "/Images/CoconutPulp1.png",
+            "/Images/CoconutPulp2.png",
+            "/Images/CoconutPulp3.png"
+          ],
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 189,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-17T09:12:03.130Z",
+      "id": "xAGN4mTltIE"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "2",
+          "name": "Coconut Water with Pulp",
+          "price": 189,
+          "image": "/Images/CoconutPulp1.png",
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Organic Coconut Water",
+          "price": 199,
+          "image": "/Images/OrganicCoconut1.png",
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 577,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-19T11:16:08.040Z",
+      "id": "RbxnRdZUOfM"
+    },
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "customerName": "Adil",
+      "email": "adiillmuhammad7@gmail.com",
+      "products": [
+        {
+          "id": "20",
+          "name": "Almond Coco Luxe",
+          "price": 249,
+          "image": "/Images/AlmondCocoLuxe1.png",
+          "quantity": 2
+        },
+        {
+          "id": "1",
+          "name": "Young Coconut Water",
+          "price": 149,
+          "image": "/Images/image1youngwater.png",
+          "quantity": 1
+        }
+      ],
+      "deliveryAddress": {
+        "fullName": "Adil",
+        "phone": "7902219858",
+        "address": "Valakkamchery House Kambalakkallu Post Vattappadam",
+        "city": "Nilambur",
+        "state": "Kerala",
+        "pincode": "679333",
+        "isDefault": true,
+        "id": "1794491656772"
+      },
+      "total": 647,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Pending",
+      "createdAt": "2026-11-24T04:24:43.876Z",
+      "id": "SPG97WKEHO8"
+    }
+  ],
+  "cart": [
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "items": [],
+      "id": "WtjLOKM6aUg"
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": "8nZ_ZNmvxrk",
+      "items": [
+        {
+          "id": "1",
+          "name": "Young Coconut Water",
+          "category": "Pure Coconut",
+          "description": "Naturally refreshing coconut water straight from young tender coconuts.",
+          "price": 149,
+          "stock": 6,
+          "images": [
+            "/Images/image1youngwater.png",
+            "/Images/image2youngwater.png",
+            "/Images/image3youngwater.png"
+          ],
+          "deleted": false
+        },
+        {
+          "id": "5",
+          "name": "Sparkling Coco",
+          "category": "Tropical Fusion",
+          "description": "A crisp and refreshing sparkling coconut drink with delicate bubbles and a naturally tropical taste.",
+          "price": 189,
+          "stock": 18,
+          "images": [
+            "/Images/SparklingCoco1.png",
+            "/Images/SparklingCoco2.png",
+            "/Images/SparklingCoco3.png"
+          ],
+          "deleted": false
+        }
+      ],
+      "id": "dbUfCEzKI88"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Pure Coconut",
+      "image": "/Images/purecoconut.png",
+      "description": "Naturally refreshing"
+    },
+    {
+      "id": "2",
+      "name": "Tropical Fusion",
+      "image": "/Images/fusioncoconut.png",
+      "description": "A fruity escape"
+    },
+    {
+      "id": "3",
+      "name": "Coconut Cream",
+      "image": "/Images/creamcoconut.png",
+      "description": "Smooth & creamy"
+    },
+    {
+      "id": "4",
+      "name": "Coconut Smoothie",
+      "image": "/Images/smoothiecoconut.png",
+      "description": "Freshly blended"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
