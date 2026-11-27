@@ -1,3 +1,4 @@
+
 {
   "name": "cocora",
   "private": true,
@@ -7,10 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "json-server db.json --host 0.0.0.0 --port 10000"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.14.0",
+    "@supabase/supabase-js": "^2.119.2",
     "@tailwindcss/vite": "^4.3.4",
     "@tanstack/react-query": "^5.106.1",
     "axios": "^1.21.0",
@@ -30,6 +33,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "@tailwindcss/vite": "^4.3.4",
     "eslint": "^10.14.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
