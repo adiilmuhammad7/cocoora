@@ -1,3 +1,4 @@
+
 import React from 'react'
 import SideBar from './SideBar'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
@@ -10,7 +11,7 @@ const AdminTrash = () => {
     const { data: products = [], isLoading, isError } = useQuery({
         queryKey: ['products'],
         queryFn: async function () {
-            const response = await axios.get("http://localhost:3000/products")
+            const response = await axios.get("https://cocoora-api.onrender.com/products")
             return response.data
         }
     })
@@ -25,7 +26,7 @@ const AdminTrash = () => {
 
     const restoreMutation = useMutation({
         mutationFn: async function (id) {
-            let response = await axios.patch(`http://localhost:3000/products/${id}`, {
+            let response = await axios.patch(`https://cocoora-api.onrender.com/products/${id}`, {
                 deleted: false
             })
             return response.data
@@ -39,7 +40,7 @@ const AdminTrash = () => {
 
     const deleteMutation = useMutation({
         mutationFn: async function (id) {
-            let response = await axios.delete(`http://localhost:3000/products/${id}`)
+            let response = await axios.delete(`https://cocoora-api.onrender.com/products/${id}`)
             return response.data
         },
         onSuccess: function () {

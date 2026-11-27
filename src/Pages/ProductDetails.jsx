@@ -23,7 +23,7 @@ const ProductDetails = function () {
     // Fetch product
     const fetchProduct = async function () {
         const response = await axios.get(
-            `http://localhost:3000/products/${id}`
+            `https://cocoora-api.onrender.com/products/${id}`
         )
         return response.data
     }
@@ -59,9 +59,8 @@ const ProductDetails = function () {
         try {
             // Get user's cart
             const response = await axios.get(
-                `http://localhost:3000/cart?userId=${user.id}`
+                `https://cocoora-api.onrender.com/cart?userId=${user.id}`
             )
-            
 
             const cartData = response.data[0]
             const currentItems = cartData?.items || []
@@ -107,14 +106,14 @@ const ProductDetails = function () {
             // Save to JSON Server
             if (cartData) {
                 await axios.patch(
-                    `http://localhost:3000/cart/${cartData.id}`,
+                    `https://cocoora-api.onrender.com/cart/${cartData.id}`,
                     {
                         items: updatedItems
                     }
                 )
             } else {
                 await axios.post(
-                    'http://localhost:3000/cart',
+                    'https://cocoora-api.onrender.com/cart',
                     {
                         userId: user.id,
                         items: updatedItems
@@ -254,7 +253,7 @@ const ProductDetails = function () {
                         <button
                             onClick={handleAddToCart}
                             disabled={product.stock <= 0 || adding}
-                            
+
                             className='flex-1 bg-[#245C43] text-white py-4 px-6 rounded-full font-semibold hover:bg-[#1A4532] transition disabled:bg-gray-300'
                         >
                             {adding ? 'Adding...' : 'Add To Cart'}

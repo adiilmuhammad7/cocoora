@@ -61,7 +61,7 @@ const Checkout = function () {
         queryFn: async function () {
 
             const response = await axios.get(
-                `http://localhost:3000/users/${user.id}`
+                `https://cocoora-api.onrender.com/users/${user.id}`
             )
 
             return response.data
@@ -93,7 +93,7 @@ const Checkout = function () {
         mutationFn: async function (addressData) {
 
             const response = await axios.put(
-                `http://localhost:3000/users/${user.id}`,
+                `https://cocoora-api.onrender.com/users/${user.id}`,
                 {
                     ...userData,
                     addresses: addressData.updatedAddresses
@@ -190,7 +190,7 @@ const Checkout = function () {
                 const product = products[i]
 
                 const response = await axios.get(
-                    `http://localhost:3000/products/${product.id}`
+                    `https://cocoora-api.onrender.com/products/${product.id}`
                 )
 
                 const newStock = response.data.stock - product.quantity
@@ -203,7 +203,7 @@ const Checkout = function () {
                 }
 
                 await axios.patch(
-                    `http://localhost:3000/products/${product.id}`,
+                    `https://cocoora-api.onrender.com/products/${product.id}`,
                     {
                         stock: newStock
                     }
@@ -212,7 +212,7 @@ const Checkout = function () {
 
             // Save order
             const response = await axios.post(
-                'http://localhost:3000/orders',
+                'https://cocoora-api.onrender.com/orders',
                 orderData
             )
 
@@ -229,7 +229,7 @@ const Checkout = function () {
 
                     // Get user's cart from JSON Server
                     const cartResponse = await axios.get(
-                        `http://localhost:3000/cart?userId=${user.id}`
+                        `https://cocoora-api.onrender.com/cart?userId=${user.id}`
                     )
 
                     const cartData = cartResponse.data[0]
@@ -238,7 +238,7 @@ const Checkout = function () {
                     if (cartData) {
 
                         await axios.patch(
-                            `http://localhost:3000/cart/${cartData.id}`,
+                            `https://cocoora-api.onrender.com/cart/${cartData.id}`,
                             {
                                 items: []
                             }

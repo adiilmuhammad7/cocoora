@@ -17,9 +17,9 @@ const Shop = function () {
     const queryClient = useQueryClient()
     const location = useLocation()
 
-   const [selectedCategory, setSelectedCategory] = useState(
-    location.state?.category || "All Drinks"
-)
+    const [selectedCategory, setSelectedCategory] = useState(
+        location.state?.category || "All Drinks"
+    )
 
     const [search, setSearch] = useState("")
     const [debouncedSearch, setDebouncedSearch] = useState("")
@@ -51,13 +51,11 @@ const Shop = function () {
 
     }, [search])
 
-    
-
     // Fetch products
     const fetchProducts = async function () {
 
         const response = await axios.get(
-            'http://localhost:3000/products'
+            'https://cocoora-api.onrender.com/products'
         )
 
         return response.data
@@ -83,7 +81,7 @@ const Shop = function () {
         if (!user) return null
 
         const response = await axios.get(
-            `http://localhost:3000/wishlist?userId=${user.id}`
+            `https://cocoora-api.onrender.com/wishlist?userId=${user.id}`
         )
 
         return response.data[0] || null
@@ -105,7 +103,7 @@ const Shop = function () {
             }
 
             const currentWishlist = await axios.get(
-                `http://localhost:3000/wishlist?userId=${user.id}`
+                `https://cocoora-api.onrender.com/wishlist?userId=${user.id}`
             )
 
             const wishlistRecord = currentWishlist.data[0]
@@ -140,7 +138,7 @@ const Shop = function () {
                 }
 
                 const response = await axios.patch(
-                    `http://localhost:3000/wishlist/${wishlistRecord.id}`,
+                    `https://cocoora-api.onrender.com/wishlist/${wishlistRecord.id}`,
                     {
                         items: updatedItems
                     }
@@ -152,7 +150,7 @@ const Shop = function () {
 
                 // Create wishlist record
                 const response = await axios.post(
-                    'http://localhost:3000/wishlist',
+                    'https://cocoora-api.onrender.com/wishlist',
                     {
                         userId: user.id,
                         items: [product]
@@ -250,10 +248,10 @@ const Shop = function () {
 
     const handleCategory = function (category) {
 
-    setSelectedCategory(category)
-    setCurrentPage(1)
+        setSelectedCategory(category)
+        setCurrentPage(1)
 
-}
+    }
 
     if (isLoading) {
         return <h1>Loading Products...</h1>
@@ -435,7 +433,6 @@ const Shop = function () {
                                 </div>
 
                             </div>
-
                         )
                     })
                 )}

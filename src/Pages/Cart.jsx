@@ -25,7 +25,7 @@ const Cart = function () {
         if (!user) return []
 
         const response = await axios.get(
-            `http://localhost:3000/cart?userId=${user.id}`
+            `https://cocoora-api.onrender.com/cart?userId=${user.id}`
         )
 
         return response.data[0]?.items || []
@@ -61,7 +61,7 @@ const Cart = function () {
         mutationFn: async function (updatedItems) {
 
             const response = await axios.get(
-                `http://localhost:3000/cart?userId=${user.id}`
+                `https://cocoora-api.onrender.com/cart?userId=${user.id}`
             )
 
             const cartRecord = response.data[0]
@@ -69,7 +69,7 @@ const Cart = function () {
             if (cartRecord) {
 
                 const updateResponse = await axios.patch(
-                    `http://localhost:3000/cart/${cartRecord.id}`,
+                    `https://cocoora-api.onrender.com/cart/${cartRecord.id}`,
                     {
                         items: updatedItems
                     }
@@ -80,7 +80,7 @@ const Cart = function () {
             } else {
 
                 const createResponse = await axios.post(
-                    'http://localhost:3000/cart',
+                    'https://cocoora-api.onrender.com/cart',
                     {
                         userId: user.id,
                         items: updatedItems

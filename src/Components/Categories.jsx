@@ -11,7 +11,9 @@ const Categories = function () {
     const { data: product = [], isLoading, isError } = useQuery({
         queryKey: ['categories'],
         queryFn: async function () {
-            const response = await axios.get('http://localhost:3000/category')
+            const response = await axios.get(
+                'https://cocoora-api.onrender.com/category'
+            )
             return response.data
         }
     })
@@ -58,9 +60,9 @@ const Categories = function () {
                             className='group cursor-pointer'
                             onClick={function () {
                                 navigate('/shop', {
-                                    state: { category: 
-                                        item.name
-                                     }
+                                    state: {
+                                        category: item.name
+                                    }
                                 })
                             }}
                         >

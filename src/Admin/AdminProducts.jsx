@@ -45,7 +45,7 @@ const AdminProducts = function () {
     const { data: products = [], isLoading, isError } = useQuery({
         queryKey: ['products'],
         queryFn: async function () {
-            const response = await axios.get('http://localhost:3000/products')
+            const response = await axios.get('https://cocoora-api.onrender.com/products')
             return response.data
         }
     })
@@ -59,7 +59,7 @@ const AdminProducts = function () {
     const addProductMutation = useMutation({
         mutationFn: async function (newProduct) {
             const response = await axios.post(
-                'http://localhost:3000/products',
+                'https://cocoora-api.onrender.com/products',
                 newProduct
             )
             return response.data
@@ -77,7 +77,7 @@ const AdminProducts = function () {
     const updateMutation = useMutation({
         mutationFn: async function (updatedProduct) {
             const response = await axios.patch(
-                `http://localhost:3000/products/${editId}`,
+                `https://cocoora-api.onrender.com/products/${editId}`,
                 updatedProduct
             )
             return response.data
@@ -96,7 +96,7 @@ const AdminProducts = function () {
     const deleteMutation = useMutation({
         mutationFn: async function (id) {
             const response = await axios.delete(
-                `http://localhost:3000/products/${id}`
+                `https://cocoora-api.onrender.com/products/${id}`
             )
             return response.data
         },
@@ -110,7 +110,7 @@ const AdminProducts = function () {
     const moveToTrashMutation = useMutation({
         mutationFn: async function (id) {
             const response = await axios.patch(
-                `http://localhost:3000/products/${id}`,
+                `https://cocoora-api.onrender.com/products/${id}`,
                 { deleted: true }
             )
             return response.data

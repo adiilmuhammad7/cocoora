@@ -1,5 +1,4 @@
-
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useMutation } from '@tanstack/react-query'
@@ -18,9 +17,7 @@ const Login = function () {
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
 
-
-
-    let user = useSelector((state)=>state.auth.user)
+    let user = useSelector((state) => state.auth.user)
 
     // LOGIN MUTATION
     const loginMutation = useMutation({
@@ -29,7 +26,7 @@ const Login = function () {
 
             // First check admins
             const adminResponse = await axios.get(
-                'http://localhost:3000/admins'
+                'https://cocoora-api.onrender.com/admins'
             )
 
             const admin = adminResponse.data.find(function (admin) {
@@ -47,7 +44,7 @@ const Login = function () {
 
             // If not admin, check users
             const userResponse = await axios.get(
-                'http://localhost:3000/users'
+                'https://cocoora-api.onrender.com/users'
             )
 
             const user = userResponse.data.find(function (user) {
@@ -55,6 +52,7 @@ const Login = function () {
                     loginData.email.trim().toLowerCase() &&
                     user.password === loginData.password
             })
+
             if (user && user.blocked === true) {
                 throw new Error('Your account has been blocked. Please contact the administrator.')
             }
@@ -142,31 +140,34 @@ const Login = function () {
         })
     }
 
-    const{data: users = []}=useQuery({
-        queryKey:['users'],
-        queryFn:async function () {
-            let response = await axios.get('http://localhost:3000/users')
+    const { data: users = [] } = useQuery({
+        queryKey: ['users'],
+        queryFn: async function () {
+            let response = await axios.get('https://cocoora-api.onrender.com/users')
             return response.data
         },
-        refetchInterval:3000
+        refetchInterval: 3000
     })
-    const currentUser = users?.find(function(User){
-       return User.id === user?.id
+
+    const currentUser = users?.find(function (User) {
+        return User.id === user?.id
     })
-    useEffect(function(){
-        if(currentUser?.blocked == true){
+
+    useEffect(function () {
+        if (currentUser?.blocked == true) {
             dispatch(logout())
             navigate('/login')
             toast.error("You Has been blocked by admin")
             localStorage.removeItem('user')
         }
-    },[currentUser])
-  
+    }, [currentUser])
+
 
     // UI
     return (
         <div className="min-h-screen bg-[#FFF8EC] flex items-center justify-center px-4 py-10">
             <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-5 sm:p-8 md:p-10">
+
                 {/* Brand */}
                 <div className="text-center mb-8">
                     <Link to="/">
@@ -179,10 +180,8 @@ const Login = function () {
                     </p>
                 </div>
 
-
                 {/* Heading */}
                 <div className="mb-7">
-
                     <h2 className="text-2xl font-bold text-[#245C43]">
                         Welcome Back
                     </h2>
@@ -190,9 +189,7 @@ const Login = function () {
                     <p className="text-gray-500 text-sm mt-2">
                         Login to your COCOORA account.
                     </p>
-
                 </div>
-
 
                 {/* Login Form */}
                 <form
@@ -203,7 +200,6 @@ const Login = function () {
 
                     {/* Email */}
                     <div>
-
                         <label className="block text-sm font-medium text-[#245C43] mb-2">
                             Email Address
                         </label>
@@ -217,13 +213,10 @@ const Login = function () {
                             }}
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#FFF8EC] outline-none focus:border-[#245C43] focus:ring-2 focus:ring-[#A8C686]/30 transition"
                         />
-
                     </div>
-
 
                     {/* Password */}
                     <div>
-
                         <label className="block text-sm font-medium text-[#245C43] mb-2">
                             Password
                         </label>
@@ -237,9 +230,7 @@ const Login = function () {
                             }}
                             className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-[#FFF8EC] outline-none focus:border-[#245C43] focus:ring-2 focus:ring-[#A8C686]/30 transition"
                         />
-
                     </div>
-
 
                     {/* Error Message */}
                     {error && (
@@ -247,7 +238,6 @@ const Login = function () {
                             {error}
                         </p>
                     )}
-
 
                     {/* Login Button */}
                     <button
@@ -262,10 +252,8 @@ const Login = function () {
 
                 </form>
 
-
                 {/* Register Link */}
                 <div className="text-center mt-7 text-sm text-gray-500">
-
                     Don't have an account?{' '}
 
                     <Link
@@ -274,13 +262,10 @@ const Login = function () {
                     >
                         Create Account
                     </Link>
-
                 </div>
 
             </div>
-
         </div>
-
     )
 }
 

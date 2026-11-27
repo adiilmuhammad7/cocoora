@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { useSelector } from 'react-redux'
 import {
@@ -23,7 +22,7 @@ const MyOrders = function () {
 
         queryFn: async function () {
             const response = await axios.get(
-                `http://localhost:3000/orders?userId=${user.id}`
+                `https://cocoora-api.onrender.com/orders?userId=${user.id}`
             )
 
             return response.data
@@ -35,7 +34,7 @@ const MyOrders = function () {
 
         mutationFn: async function (orderId) {
             await axios.delete(
-                `http://localhost:3000/orders/${orderId}`
+                `https://cocoora-api.onrender.com/orders/${orderId}`
             )
         },
 

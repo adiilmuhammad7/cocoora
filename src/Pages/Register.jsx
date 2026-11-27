@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
@@ -107,7 +106,7 @@ const Register = function () {
         mutationFn: async function (userData) {
 
             const response = await axios.get(
-                'http://localhost:3000/users'
+                'https://cocoora-api.onrender.com/users'
             )
 
             const existingUser = response.data.find(function (user) {
@@ -119,7 +118,7 @@ const Register = function () {
             }
 
             const registerResponse = await axios.post(
-                'http://localhost:3000/users',
+                'https://cocoora-api.onrender.com/users',
                 userData
             )
 

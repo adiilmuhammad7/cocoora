@@ -1,11 +1,10 @@
 
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import SideBar from './SideBar'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import axios from 'axios'
 
 const AdminOrders = () => {
-
 
   const [activeFilter, setActiveFilter] = useState('All Orders')
   const [selectedOrder, setSelectedOrder] = useState(null)
@@ -18,28 +17,29 @@ const AdminOrders = () => {
   const { data: orders = [], isLoading, isError } = useQuery({
     queryKey: ['adminOrders'],
     queryFn: async function () {
-      const response = await axios.get('http://localhost:3000/orders')
+      const response = await axios.get('https://cocoora-api.onrender.com/orders')
       return response.data
     }
   })
+
   useEffect(function () {
 
     const timer = setTimeout(function () {
-        setDebouncedSearch(search)
+      setDebouncedSearch(search)
     }, 500)
 
     return function () {
-        clearTimeout(timer)
+      clearTimeout(timer)
     }
 
-}, [search])
+  }, [search])
 
   const queryClient = useQueryClient()
 
   const updateStatusMutation = useMutation({
     mutationFn: async function ({ orderId, status }) {
       const response = await axios.patch(
-        `http://localhost:3000/orders/${orderId}`,
+        `https://cocoora-api.onrender.com/orders/${orderId}`,
         { status: status }
       )
 

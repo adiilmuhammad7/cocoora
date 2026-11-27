@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -17,7 +18,9 @@ const UserSessionCheck = function () {
     const { data: users = [] } = useQuery({
         queryKey: ['users'],
         queryFn: async function () {
-            const response = await axios.get('http://localhost:3000/users')
+            const response = await axios.get(
+                'https://cocoora-api.onrender.com/users'
+            )
             return response.data
         },
         refetchInterval: 3000,

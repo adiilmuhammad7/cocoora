@@ -32,7 +32,7 @@ const Wishlist = function () {
             quantity: 1
         }
 
-        axios.get(`http://localhost:3000/cart?userId=${user.id}`)
+        axios.get(`https://cocoora-api.onrender.com/cart?userId=${user.id}`)
             .then(function (response) {
 
                 const cartData = response.data[0]
@@ -63,13 +63,13 @@ const Wishlist = function () {
                         updatedItems = [...cartData.items, cartProduct]
                     }
 
-                    return axios.patch(`http://localhost:3000/cart/${cartData.id}`, {
+                    return axios.patch(`https://cocoora-api.onrender.com/cart/${cartData.id}`, {
                         items: updatedItems
                     })
 
                 } else {
 
-                    return axios.post('http://localhost:3000/cart', {
+                    return axios.post('https://cocoora-api.onrender.com/cart', {
                         userId: user.id,
                         items: [cartProduct]
                     })
@@ -95,7 +95,7 @@ const Wishlist = function () {
 
         if (!user) return
 
-        axios.get(`http://localhost:3000/wishlist?userId=${user.id}`)
+        axios.get(`https://cocoora-api.onrender.com/wishlist?userId=${user.id}`)
             .then(function (response) {
 
                 const wishlistData = response.data[0]
@@ -106,7 +106,7 @@ const Wishlist = function () {
                     return String(item.id) !== String(productId)
                 })
 
-                return axios.patch(`http://localhost:3000/wishlist/${wishlistData.id}`, {
+                return axios.patch(`https://cocoora-api.onrender.com/wishlist/${wishlistData.id}`, {
                     items: updatedItems
                 })
 

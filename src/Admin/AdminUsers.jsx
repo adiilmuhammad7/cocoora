@@ -18,7 +18,7 @@ const AdminUsers = function () {
     const { data: users = [], isLoading } = useQuery({
         queryKey: ['adminUsers'],
         queryFn: async function () {
-            const response = await axios.get('http://localhost:3000/users')
+            const response = await axios.get('https://cocoora-api.onrender.com/users')
             return response.data
         }
     })
@@ -27,7 +27,7 @@ const AdminUsers = function () {
     const blockMutation = useMutation({
         mutationFn: async function (user) {
             const response = await axios.patch(
-                `http://localhost:3000/users/${user.id}`,
+                `https://cocoora-api.onrender.com/users/${user.id}`,
                 {
                     isBlocked: !user.isBlocked
                 }
@@ -47,7 +47,7 @@ const AdminUsers = function () {
     const deleteMutation = useMutation({
         mutationFn: async function (userId) {
             return await axios.delete(
-                `http://localhost:3000/users/${userId}`
+                `https://cocoora-api.onrender.com/users/${userId}`
             )
         },
 
